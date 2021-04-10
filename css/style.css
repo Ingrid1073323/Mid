@@ -1,0 +1,23 @@
+p, ul{/*把p跟ul分開*/
+    border:2px solid purple;
+    padding: .5em;/*拉開框距離 .5=0.5   em:倍數*/
+}
+.block, li/*.表示是要找class*/
+{
+    border:2px solid blue;
+    padding: .5em;
+}
+ul
+{
+    display: flex;/*橫排*/
+    list-style: none;/*把點拿掉*/
+}
+li/*把自分開點*/
+{
+    margin:0px 10px;/*上下距離  左右距離*/
+}
+.block
+{
+    display: block;
+    /*border-bottom: 5px groove red;*/
+}

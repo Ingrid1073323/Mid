@@ -1,0 +1,155 @@
+body{
+    background-image: url('https://thumbs.gfycat.com/HarmoniousFoolishGuineapig-max-1mb.gif');
+    background-color:midnightblue;
+    background-size:70%;
+    /*margin:0px 0px 0px 0px;height: 30vh;*/
+    background-position:0% 0%;
+    
+    padding:0;
+}
+#cld1{
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top:30;
+
+    animation-name:cloud;
+    animation-duration:9s;
+    animation-iteration-count: infinite;
+}
+#cld2{
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    right: 200px;
+    top:-10px;
+
+    animation-name:cloud;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+#cld3{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    right: 600px;
+    top:50px;
+
+    animation-name:cloud;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud{
+    0% { transform:translateY(-10px);}
+    50% {transform:translateY(-40px);}
+    100% {transform:translateY(-10px);}
+  }  
+  
+#ship{
+    width: 400px;
+    height: 400px;
+    position:absolute;
+    left:0;
+    bottom:15px;
+    animation-name:forward;
+    animation-duration:15s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    /*-webkit-animation:'fly' 3s linear infinite;*/ 
+}
+@keyframes forward{
+    from{left:1300px}
+    to{left:-500px}
+  }  
+  
+#st1{
+    width: 100px;
+    height: 70px;
+    position:absolute;
+    right:50px;
+    bottom:10px;
+    animation-name:rotate;
+    animation-duration:15s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+   /* -webkit-animation:'fly' 5s linear infinite;*/ 
+    /*animation:'rotate1' 3s linear infinite;/*3秒內0轉到360度*/
+}
+#st2{
+    width: 100px;
+    height: 70px;
+    position:absolute;
+    left:100px;
+    bottom:5px;
+    animation-name:rotate;
+    animation-duration:20s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+   /* -webkit-animation:'fly' 5s linear infinite;*/
+    
+    /*animation:'rotate1' 3s linear infinite;/*3秒內0轉到360度*/
+}
+
+@keyframes rotate{
+    from{transform:rotate(0deg);}/*0轉到360度*/
+    to{transform:rotate(360deg);}
+    from{left:10px}
+    to{left:80px}
+    
+}
+#sg{
+    width: 150px;
+    height: 150px;
+    right:-100px;
+    top:10px;
+    position:absolute;
+    animation-name:fly;
+    animation-duration:35s;
+    /*animation-direction:alternate;*/
+    animation-iteration-count: infinite;
+}
+@keyframes fly{
+    from{left:900px}
+    to{left:-50px}
+} 
+#moon{
+    width: 300px;
+    height: 500px;
+    right:5px;
+    top:-200px;
+    position:absolute;
+}
+
+
+/*img{
+    animation-name: forward;
+    animation-duration:4s;
+}*/
+
+
+
+
+/*@keyframes move{
+    0% {background-color: lightslategrey; left: 0px;top:0px}
+    15% {background-color: gray; left: 3px;top:0px}
+    20% {background-color: green; left: 5px;top:0px}
+    40% {background-color: lightslategrey; left: 10px;top:0px}
+    60% {background-color: lightslategrey; left: 15px;top:0px}
+    80% {background-color: lightslategrey; left: 20px;top:0px}
+} */ 
+/*div{
+    width:350px;
+    height:200px;
+    margin:100px 0px 0px 100px; /*上右下左
+    background-color: lightslategrey;
+    position: relative;
+    animation-name: move;
+    animation-duration:4s;
+}*/
+
+/*img{
+    width: 100px;
+    height: 100px;
+    margin: -40px 0px 0px 115px;
+}*/
+
